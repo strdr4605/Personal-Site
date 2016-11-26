@@ -1,0 +1,48 @@
+$primary-color: #fff;
+$header-footer-height: 50px;
+
+#header {
+  background-color: $primary-color;
+  top: 0;
+  height: $header-footer-height;
+  width: auto;
+  position: relative;
+  box-shadow: 0 1px 1px #888888;
+}
+
+#main {
+  flex: 1; // Sticky Footer
+  display: flex;
+  flex-flow: row;
+}
+
+#content {
+  background-color: #fff;
+  flex-basis: 86%;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+#footer {
+  background-color: $primary-color;
+  position: relative;
+  bottom: 0;
+  width: auto;
+  height: $header-footer-height;
+  clear: left;
+  width: 100%;
+  box-shadow: 0 -1px 1px #888888;
+  span {
+    position: absolute;
+    right: 7%;
+    top: 15px;
+    font-size: 17px;
+    color: #66757f;
+  }
+}
+
+#logo {
+  position: absolute;
+  left: 7%;
+  margin: 10px 10px;
+}
