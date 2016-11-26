@@ -15,7 +15,9 @@
   background-color: #fff;
   flex-basis: 86%;
   margin: 10px auto;
-  border-radius: 5px; }
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column; }
 
 #footer {
   background-color: #fff;
@@ -24,7 +26,6 @@
   width: auto;
   height: 50px;
   clear: left;
-  width: 100%;
   box-shadow: 0 -1px 1px #888888; }
   #footer span {
     position: absolute;
