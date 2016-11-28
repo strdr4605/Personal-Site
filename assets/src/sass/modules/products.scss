@@ -24,24 +24,31 @@ $product-size: 300px;
     align-items: center;
     justify-content: center;
 
-    .product .description {
-      visibility:hidden;
-      position: absolute;
-      top: 20%;
-      text-align: center;
-      width: 100%;
-    }
-
     .product {
       position: relative;
+
+      .description {
+        visibility:hidden;
+        position: absolute;
+        top: 20%;
+        text-align: center;
+        width: 100%;
+      }
+
+      .zoom-product {
+        visibility: hidden;
+      }
     }
 
-    .product:hover .description {
-      visibility: visible;
-    }
+    .product:hover {
 
-    .product:hover img {
-      opacity: 0.3;
+      .description {
+        visibility: visible;
+      }
+
+      img {
+        opacity: 0.3;
+      }
     }
 
     img, .product {
