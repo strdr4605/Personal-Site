@@ -1,0 +1,16 @@
+#content {
+  display: flex;
+  flex-flow: row wrap; }
+  #content .description {
+    margin: 50px 20px 0;
+    width: 60vw;
+    height: 250px; }
+    #content .description p {
+      text-align: justify;
+      margin: 0; }
+  #content #about-photo {
+    height: 300px;
+    width: 200px; }
+    #content #about-photo img {
+      margin-top: 50px;
+      margin-bottom: 50px; }
