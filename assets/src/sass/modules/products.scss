@@ -36,7 +36,24 @@ $product-size: 300px;
       }
 
       .zoom-product {
-        visibility: hidden;
+        position: fixed;
+        top:10vh;
+        left: 20vw;
+        width: 60vw;
+        height: 70vh;
+        z-index: 99;
+        background-color: #CCC;
+        border-radius: 5px;
+
+        .zoom-image {
+          width: 70vw;
+          max-width: 70vh;
+          height: 70vh;
+          max-height: 70vw;
+          border-radius: 5px;
+        }
+
+
       }
     }
 
@@ -46,16 +63,25 @@ $product-size: 300px;
         visibility: visible;
       }
 
-      img {
+      .product-image {
         opacity: 0.3;
       }
     }
 
-    img, .product {
+    .product-image, .product {
       flex-grow: 1;
       max-width: $product-size;
       max-height: 100%;
     }
   }
 
+}
+
+.display-flex {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.hidden {
+  display: none;
 }
